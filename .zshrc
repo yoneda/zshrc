@@ -1,4 +1,7 @@
 
+# パスの追加
+export PATH=/Users/yoneda/.pyenv/shims:$PATH
+
 # 補完の機能を追加
 # ファイル名を途中まで入力してtabを押すと補完してくれるのはデフォルトでできる。
 # compinitは、コマンドの引数まで補完してくれる！
