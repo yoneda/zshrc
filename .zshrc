@@ -14,4 +14,5 @@ compinit
 # というシンプルなもの
 PROMPT='%n$ '
 
-
+# エイリアスを追加
+alias ghcreate='python /Users/yoneda/program/git/ghcreate/new.py'
