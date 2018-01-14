@@ -1,7 +1,8 @@
 
-# パスの追加
-# pyenvのため
+# pyenvのためにパスを追加
 export PATH=~/.pyenv/shims:$PATH
+# phpbrewのためにスクリプトを実行
+source ~/.phpbrew/bashrc
 
 # 補完の機能を追加
 # ファイル名を途中まで入力してtabを押すと補完してくれるのはデフォルトでできる。
