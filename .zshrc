@@ -1,6 +1,7 @@
 
 # パスの追加
-export PATH=/Users/yoneda/.pyenv/shims:$PATH
+# pyenvのため
+export PATH=~/.pyenv/shims:$PATH
 
 # 補完の機能を追加
 # ファイル名を途中まで入力してtabを押すと補完してくれるのはデフォルトでできる。
