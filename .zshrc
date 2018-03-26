@@ -1,8 +1,8 @@
 
 # pyenvのためにパスを追加
-export PATH=~/.pyenv/shims:$PATH
+# export PATH=~/.pyenv/shims:$PATH
 # phpbrewのためにスクリプトを実行
-source ~/.phpbrew/bashrc
+# source ~/.phpbrew/bashrc
 
 # git add commit push を同時にやる
 # function hoge() とやることで、エイリアスの代わりになり、
@@ -26,4 +26,4 @@ compinit
 PROMPT='%n$ '
 
 # エイリアスを追加
-alias ghcreate='python /Users/yoneda/softwares/ghcreate/new.py'
+# alias ghcreate='python /Users/yoneda/softwares/ghcreate/new.py'
