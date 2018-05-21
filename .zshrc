@@ -1,8 +1,11 @@
 
 # pyenvのためにパスを追加
-# export PATH=~/.pyenv/shims:$PATH
+export PATH=~/.pyenv/shims:$PATH
 # phpbrewのためにスクリプトを実行
 # source ~/.phpbrew/bashrc
+
+# nodebrewのためにパスを追加
+export PATH=~/.nodebrew/current/bin:$PATH
 
 # git add commit push を同時にやる
 # function hoge() とやることで、エイリアスの代わりになり、
@@ -27,3 +30,10 @@ PROMPT='%n$ '
 
 # エイリアスを追加
 # alias ghcreate='python /Users/yoneda/softwares/ghcreate/new.py'
+
+# java8を利用したい場合
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+
+# cpコマンドで隠しファイルも含めてコピーできるように
+setopt GLOB_DOTS
+
