@@ -37,3 +37,9 @@ export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 # cpコマンドで隠しファイルも含めてコピーできるように
 setopt GLOB_DOTS
 
+# タブのタイトルにカレントディレクトリのフォルダ名を表示しておく
+precmd(){
+	echo -ne "\e]1;${PWD:t}\a"
+}
+
+
