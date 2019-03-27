@@ -16,6 +16,12 @@ function lazygit(){
 	git push
 }
 
+# git add commit を同時にやる
+function easygit(){
+	git add .
+	git commit -a -m "$1"
+}
+
 # 補完の機能を追加
 # ファイル名を途中まで入力してtabを押すと補完してくれるのはデフォルトでできる。
 # compinitは、コマンドの引数まで補完してくれる！
