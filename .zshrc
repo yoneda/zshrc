@@ -4,6 +4,9 @@ export PATH=~/.pyenv/shims:$PATH
 # phpbrewのためにスクリプトを実行
 # source ~/.phpbrew/bashrc
 
+# rbenvのために追加
+eval "$(rbenv init -)"
+
 # nodebrewのためにパスを追加
 export PATH=~/.nodebrew/current/bin:$PATH
 
