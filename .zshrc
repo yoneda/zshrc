@@ -10,6 +10,10 @@ eval "$(rbenv init -)"
 # nodebrewのためにパスを追加
 export PATH=~/.nodebrew/current/bin:$PATH
 
+# Goのために追加
+export GOPATH=${HOME}/go
+export PATH=$GOPATH/bin:$PATH
+
 # git add commit push を同時にやる
 # function hoge() とやることで、エイリアスの代わりになり、
 # どの階層でhoge と入力してもこの関数が呼ばれる。不思議だ。
