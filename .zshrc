@@ -43,6 +43,7 @@ compinit
 
 # エイリアスを追加
 # alias ghcreate='python /Users/yoneda/softwares/ghcreate/new.py'
+alias scripts='open -a "Chromium" ~/scripts/'
 
 # java8を利用したい場合
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
