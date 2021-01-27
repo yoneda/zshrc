@@ -45,6 +45,9 @@ compinit
 # alias ghcreate='python /Users/yoneda/softwares/ghcreate/new.py'
 alias scripts='open -a "Google Chrome" ~/scripts/'
 
+# sublime text に関するコマンド
+alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+
 # java8を利用したい場合
 export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
 
