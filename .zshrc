@@ -44,6 +44,7 @@ compinit
 # エイリアスを追加
 # alias ghcreate='python /Users/yoneda/softwares/ghcreate/new.py'
 alias scripts='open -a "Google Chrome" ~/scripts/'
+alias appdata='open ~/Library/Application\ Support/'
 
 # sublime text に関するコマンド
 alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
