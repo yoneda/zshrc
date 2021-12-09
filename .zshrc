@@ -4,6 +4,9 @@ export PATH=~/.pyenv/shims:$PATH
 # phpbrewのためにスクリプトを実行
 # source ~/.phpbrew/bashrc
 
+# laravelのためにパスを通す
+export PATH=~/.composer/vendor/bin:$PATH
+
 # rbenvのために追加
 eval "$(rbenv init -)"
 
