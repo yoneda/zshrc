@@ -75,3 +75,7 @@ zstyle ':vcs_info:*' formats '[%F{green}%b%f]'
 precmd() { vcs_info }
 # プロンプト表示
 PROMPT='%n${vcs_info_msg_0_}$ '
+
+code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
+
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
