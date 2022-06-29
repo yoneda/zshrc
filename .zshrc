@@ -17,6 +17,9 @@ export PATH=~/.nodebrew/current/bin:$PATH
 export GOPATH=${HOME}/go
 export PATH=$GOPATH/bin:$PATH
 
+# npmのパス問題を解決
+export PATH=$PATH:`npm bin -g`
+
 # git add commit push を同時にやる
 # function hoge() とやることで、エイリアスの代わりになり、
 # どの階層でhoge と入力してもこの関数が呼ばれる。不思議だ。
