@@ -13,12 +13,16 @@ eval "$(rbenv init -)"
 # nodebrewのためにパスを追加
 export PATH=~/.nodebrew/current/bin:$PATH
 
+# npmのパスが通ってない問題を解決(v16.0.0)
+# export PATH=$HOME/.nodebrew/node/v16.0.0/bin:$PATH
+
 # Goのために追加
 export GOPATH=${HOME}/go
 export PATH=$GOPATH/bin:$PATH
 
-# npmのパス問題を解決
-export PATH=$PATH:`npm bin -g`
+# macOS Monterey からPython2.7が削除されたため、pythonコマンドでPython3が起動するようaliasを設定
+alias python='python3'
+alias pip='pip3'
 
 # git add commit push を同時にやる
 # function hoge() とやることで、エイリアスの代わりになり、
@@ -82,3 +86,12 @@ PROMPT='%n${vcs_info_msg_0_}$ '
 code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+
+# homebrewで追加したphp8のために追加
+export PATH="/opt/homebrew/opt/php@8.0/bin:$PATH"
+export PATH="/opt/homebrew/opt/php@8.0/sbin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/php@8.0/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/php@8.0/include"
+export PATH="~/.composer/vendor/bin:$PATH"
+
+
